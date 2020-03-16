@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace measurements_lastlast.Model
+namespace measurements_end.Model
 {
     public partial class measurementsContext : DbContext
     {
@@ -28,13 +28,6 @@ namespace measurements_lastlast.Model
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Measurements>(entity =>
-            {
-                entity.Property(e => e.CamId).IsUnicode(false);
-
-                entity.Property(e => e.CarsDetected).IsUnicode(false);
-            });
-
             OnModelCreatingPartial(modelBuilder);
         }
 

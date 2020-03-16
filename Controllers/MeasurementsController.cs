@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using measurements_lastlast.Model;
+using measurements_end.Model;
 
-namespace measurements_lastlast.Controllers
+namespace measurements_end.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

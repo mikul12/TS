@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "measurements_lastlast/1.0.0": {
+      "measurements_end/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "3.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.2",
@@ -303,10 +303,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "measurements_lastlast.dll": {}
+          "measurements_end.dll": {}
         },
         "compile": {
-          "measurements_lastlast.dll": {}
+          "measurements_end.dll": {}
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -3982,7 +3982,7 @@
     }
   },
   "libraries": {
-    "measurements_lastlast/1.0.0": {
+    "measurements_end/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

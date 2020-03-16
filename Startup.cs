@@ -11,11 +11,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using measurements_lastlast.Model;
+using measurements_end.Model;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace measurements_lastlast
+namespace measurements_end
 {
     public class Startup
     {
@@ -35,7 +36,7 @@ namespace measurements_lastlast
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "measurements", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TITLE", Version = "v1" });
             });
         }
 

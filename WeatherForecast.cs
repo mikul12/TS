@@ -1,6 +1,6 @@
 using System;
 
-namespace measurements_lastlast
+namespace measurements_end
 {
     public class WeatherForecast
     {
