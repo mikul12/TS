@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace measurements_end.Model
+namespace measurements2020.Model
 {
     [Table("measurements")]
     public partial class Measurements
@@ -15,8 +15,8 @@ namespace measurements_end.Model
         public string CamId { get; set; }
         [Column("carsDetected")]
         public double? CarsDetected { get; set; }
-        [Column("datetime", TypeName = "datetime")]
-        public DateTime? Datetime { get; set; }
+        [Column("datetime", TypeName = "text")]
+        public string Datetime { get; set; }
         [Column("crowd")]
         public double? Crowd { get; set; }
     }

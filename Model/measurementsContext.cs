@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace measurements_end.Model
+namespace measurements2020.Model
 {
     public partial class measurementsContext : DbContext
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace measurements_end.Controllers
+namespace measurements2020.Controllers
 {
     [ApiController]
     [Route("[controller]")]

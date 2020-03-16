@@ -8689,11 +8689,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\measurements_end\\measurements_end\\measurements_end.csproj",
-      "projectName": "measurements_end",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\measurements_end\\measurements_end\\measurements_end.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\measurements2020\\measurements2020\\measurements2020.csproj",
+      "projectName": "measurements2020",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\measurements2020\\measurements2020\\measurements2020.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\measurements_end\\measurements_end\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\measurements2020\\measurements2020\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

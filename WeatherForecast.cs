@@ -1,6 +1,6 @@
 using System;
 
-namespace measurements_end
+namespace measurements2020
 {
     public class WeatherForecast
     {
