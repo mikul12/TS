@@ -16,7 +16,7 @@ namespace measurements_lastlast.Model
         public string CamId { get; set; }
         [Column("carsDetected")]
         [StringLength(50)]
-        public string CarsDetected { get; set; }
+        public double? CarsDetected { get; set; }
         [Column("dateTime", TypeName = "datetime")]
         public DateTime? DateTime { get; set; }
         [Column("crowd")]
