@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using measurements_last2.Model;
+using measurements_lastlast.Model;
 
-namespace measurements_last2.Controllers
+namespace measurements_lastlast.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -29,7 +29,7 @@ namespace measurements_last2.Controllers
 
         // GET: api/Measurements/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Measurements>> GetMeasurements(string id)
+        public async Task<ActionResult<Measurements>> GetMeasurements(int id)
         {
             var measurements = await _context.Measurements.FindAsync(id);
 
@@ -45,9 +45,9 @@ namespace measurements_last2.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutMeasurements(string id, Measurements measurements)
+        public async Task<IActionResult> PutMeasurements(int id, Measurements measurements)
         {
-            if (id != measurements.CamId)
+            if (id != measurements.Id)
             {
                 return BadRequest();
             }
@@ -80,28 +80,14 @@ namespace measurements_last2.Controllers
         public async Task<ActionResult<Measurements>> PostMeasurements(Measurements measurements)
         {
             _context.Measurements.Add(measurements);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (MeasurementsExists(measurements.CamId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMeasurements", new { id = measurements.CamId }, measurements);
+            return CreatedAtAction("GetMeasurements", new { id = measurements.Id }, measurements);
         }
 
         // DELETE: api/Measurements/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Measurements>> DeleteMeasurements(string id)
+        public async Task<ActionResult<Measurements>> DeleteMeasurements(int id)
         {
             var measurements = await _context.Measurements.FindAsync(id);
             if (measurements == null)
@@ -115,9 +101,9 @@ namespace measurements_last2.Controllers
             return measurements;
         }
 
-        private bool MeasurementsExists(string id)
+        private bool MeasurementsExists(int id)
         {
-            return _context.Measurements.Any(e => e.CamId == id);
+            return _context.Measurements.Any(e => e.Id == id);
         }
     }
 }

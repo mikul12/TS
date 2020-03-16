@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace measurements_last2.Model
+namespace measurements_lastlast.Model
 {
     [Table("measurements")]
     public partial class Measurements
     {
         [Key]
+        [Column("id")]
+        public int Id { get; set; }
         [Column("camId")]
-        [StringLength(30)]
+        [StringLength(40)]
         public string CamId { get; set; }
         [Column("carsDetected")]
-        public int? CarsDetected { get; set; }
-        [Column("dateTime", TypeName = "date")]
+        [StringLength(50)]
+        public string CarsDetected { get; set; }
+        [Column("dateTime", TypeName = "datetime")]
         public DateTime? DateTime { get; set; }
+        [Column("crowd")]
+        public double? Crowd { get; set; }
     }
 }

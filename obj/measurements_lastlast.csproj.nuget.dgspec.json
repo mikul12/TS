@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\measurements_last2\\measurements_last2\\measurements_last2.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\measurements_lastlast\\measurements_lastlast\\measurements_lastlast.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\measurements_last2\\measurements_last2\\measurements_last2.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\measurements_lastlast\\measurements_lastlast\\measurements_lastlast.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\measurements_last2\\measurements_last2\\measurements_last2.csproj",
-        "projectName": "measurements_last2",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\measurements_last2\\measurements_last2\\measurements_last2.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\measurements_lastlast\\measurements_lastlast\\measurements_lastlast.csproj",
+        "projectName": "measurements_lastlast",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\measurements_lastlast\\measurements_lastlast\\measurements_lastlast.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\measurements_last2\\measurements_last2\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\measurements_lastlast\\measurements_lastlast\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -68,14 +68,6 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.1.0, )"
-            },
-            "Swashbuckle.AspNetCore.Swagger": {
-              "target": "Package",
-              "version": "[5.1.0, )"
-            },
-            "Swashbuckle.Core": {
-              "target": "Package",
-              "version": "[5.6.0, )"
             }
           },
           "imports": [

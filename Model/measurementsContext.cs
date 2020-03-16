@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace measurements_last2.Model
+namespace measurements_lastlast.Model
 {
     public partial class measurementsContext : DbContext
     {
@@ -30,10 +30,9 @@ namespace measurements_last2.Model
         {
             modelBuilder.Entity<Measurements>(entity =>
             {
-                entity.HasKey(e => e.CamId)
-                    .HasName("PK__measurem__16DA075209FF603B");
-
                 entity.Property(e => e.CamId).IsUnicode(false);
+
+                entity.Property(e => e.CarsDetected).IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);

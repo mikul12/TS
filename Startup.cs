@@ -11,11 +11,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using measurements_last2.Model;
-using Swashbuckle.AspNetCore.Swagger;
+using measurements_lastlast.Model;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Swagger;
 
-namespace measurements_last2
+namespace measurements_lastlast
 {
     public class Startup
     {
@@ -64,7 +64,7 @@ namespace measurements_last2
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My first API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Measurements API V1");
                 c.RoutePrefix = string.Empty; // launch swagger from root
             });
         }
