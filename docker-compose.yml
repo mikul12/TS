@@ -1,0 +1,65 @@
+version: "3"
+
+services:
+
+  rabbit:
+
+    image: rabbitmq:3-management
+
+    ports:
+      # - "4369:4369"
+      # - "5671:5671"
+      - "5672:5672"
+      # - "25672:25672"
+      # - "15671:15671"
+      - "15672:15672"
+
+    expose:
+      - "15672"
+      - "5672"
+
+    labels:
+      NAME: "rabbit"
+
+  scraper:
+
+    build: ./Scraper
+
+    restart: on-failure
+
+    depends_on:
+      - rabbit
+
+    links:
+      - rabbit
+
+    environment:
+      - cam_url=https://ie.trafficland.com/v2.0/200087/full?system=ddot&pubtoken=cb66d541f7266d3d1483e4961900be04db76571b534743cffb7c9b0396373a90&refreshRate=2000&t=1589027230376
+      - cam_id=CAM1
+
+  server:
+  
+    build: ./Server
+
+    ports:
+      - "5000:5000"
+
+    expose:
+      - "5000"
+
+    labels:
+      NAME: "server"
+            
+  consumer:
+  
+    build: ./Consumer
+
+    restart: on-failure
+
+    depends_on:
+      - rabbit
+      - server
+
+    links:
+      - rabbit
+      - server
